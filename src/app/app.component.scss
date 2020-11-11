@@ -1,0 +1,217 @@
+
+
+.grid{
+    display: grid;
+    grid-template-rows: minmax(200px,1fr);
+    background-color: #a7a7a7;
+    grid-gap:3px;
+    margin: 10px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr;
+    grid-template-areas: "logo1 hour1 hez1 hour2 . . long1"
+                         "logo1 from1 hez1 to1 . . direct1"
+                         "logo2 hour3 hez2 hour4 . . long2"
+                         "logo2 from2 hez2 to2 . . direct2"
+                         "price price . . . select select"
+                         "web web . . . select select";
+    background-color: white;
+    border-radius: 1%;
+    grid-gap:3px;
+    
+
+    .logo1{
+        grid-area:logo1;
+        
+    }
+
+    .logo2{
+        grid-area:logo2;
+        
+    }
+ 
+
+    .from1{
+        grid-area:from1;
+        opacity: 0.6;
+        font-size:large;
+    }
+
+    .from2{
+        grid-area:from2;
+        opacity: 0.6;
+        font-size:large;
+    }
+
+    .to1{
+        grid-area:to1;
+        opacity: 0.6;
+        font-size:large;
+    }
+
+    
+    .to2{
+        grid-area:to2;
+        opacity: 0.6;
+        font-size:large;
+    }
+
+ 
+    
+
+    .hez1{
+        grid-area:hez1;
+       
+        opacity: 0.7;
+    }
+
+    
+    .hez2{
+        grid-area:hez2;
+        opacity: 0.7;
+       
+    }
+
+
+    .hour1{
+        grid-area:hour1;
+        font-size:x-large;
+        
+    }
+    .hour2{
+        grid-area:hour2;
+        font-size:x-large;
+        
+    }
+    .hour3{
+        grid-area:hour3;
+        font-size:x-large;
+        
+    }
+    .hour4{
+        grid-area:hour4;
+        font-size:x-large;
+        
+    }
+
+
+    .long1{
+        grid-area:long1;
+        opacity: 0.6;
+        font-size:medium;
+    }
+
+    .long2{
+        grid-area:long2;
+        opacity: 0.6;
+        font-size:medium;
+    }
+
+
+    .direct1{
+        grid-area:direct1;
+        color: #388a61;
+        font-size:medium;
+        font-weight: 500;
+    }
+
+    .direct22{
+        grid-area:direct1;
+        color: red;
+        font-size:medium;
+        
+        
+    }
+
+
+
+    .direct2{
+        grid-area:direct2;
+        color: #388a61;
+        font-size:medium;
+        font-weight: 500;
+    }
+
+    .direct333{
+        grid-area:direct2;
+        color: red;
+        font-size:medium;
+        
+    }
+
+
+    .price{
+        grid-area:price;
+        background-color: white;
+        font-size: xx-large;
+    }
+
+    .web{
+        grid-area:web;
+        background-color: white;
+        opacity: 0.6;
+    }
+
+    .select{
+    grid-area:select;
+    background-color: #388a61;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+   
+
+    button{
+        background-color: hsl(160, 42%, 49%);
+        width: 95%;
+        height: 60%;
+        margin-top: 10%;
+        font-size: x-large;
+    }
+
+    button:hover{
+        background-color: hsl(160, 42%, 49%);
+        width: 95%;
+        height: 60%;
+        margin-top: 10%;
+        font-size: x-large;
+        filter: brightness(150%);
+        
+
+    }
+
+    }
+    
+img{
+    max-width: 40px;
+}
+    
+
+
+}
+
+
+@media only screen and (min-device-width : 768px)
+ {
+
+    .select{
+        grid-area:select;
+        background-color: #388a61;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+    }
+       
+    
+        button{
+            background-color: hsl(160, 42%, 49%);
+            max-width: 200px;
+            max-height: 100px;
+            font-size: x-large;
+            margin-bottom: 10px;
+        }
+
+}
